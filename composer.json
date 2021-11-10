@@ -1,0 +1,33 @@
+{
+    "name": "ashiful/service",
+    "description": "Codegame Service pack",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ashiful Islam",
+            "email": "ashiful134@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ashiful\\Service\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ashiful\\Service\\Providers\\CodegameServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
